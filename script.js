@@ -65,3 +65,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Кнопки "Подробнее"
+document.addEventListener('DOMContentLoaded', function() {
+    const detailButtons = document.querySelectorAll('.btn-details');
+    
+    detailButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const productInfo = this.closest('.product-info');
+            const details = productInfo.querySelector('.product-details');
+            
+            // Переключаем класс show
+            details.classList.toggle('show');
+            
+            // Меняем текст и стиль кнопки
+            if (details.classList.contains('show')) {
+                this.textContent = 'Скрыть ▲';
+                this.classList.add('active');
+            } else {
+                this.textContent = 'Подробнее ▼';
+                this.classList.remove('active');
+            }
+        });
+    });
+});
