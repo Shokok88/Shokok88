@@ -31,7 +31,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 20px;
+    padding: 20px;
 }
 
 .logo {
@@ -49,10 +49,10 @@ nav a {
     text-decoration: none;
     color: #1d1d1f;
     font-size: 16px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    transition: all 0.3s;
+    padding: 8px 18px;
+    border-radius: 18px;
     background: transparent;
+    transition: all 0.3s;
 }
 
 nav a:hover {
@@ -264,12 +264,89 @@ nav a:hover {
 }
 
 .about p {
-    font-size: 20px;​​​​​​​​​​​​​​​​
-    
-/* Адаптивность для телефонов */
+    font-size: 20px;
+    color: #6e6e73;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Контакты */
+.contacts {
+    padding: 80px 0;
+    background: #f5f5f7;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #1d1d1f;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-contact-large {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-contact-large .icon {
+    font-size: 28px;
+}
+
+.btn-contact-large.whatsapp {
+    background: #25D366;
+}
+
+.btn-contact-large.whatsapp:hover {
+    background: #20ba5a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.btn-contact-large.telegram {
+    background: #0088cc;
+}
+
+.btn-contact-large.telegram:hover {
+    background: #0077b5;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 136, 204, 0.4);
+}
+
+/* Футер */
+footer {
+    background: #1d1d1f;
+    color: #f5f5f7;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #a1a1a6;
+}
+
+/* Адаптивность для мобильных */
 @media (max-width: 768px) {
+    /* Тонкая шапка на телефоне */
     header .container {
-        padding: 8px 15px;
+        padding: 10px 15px;
     }
     
     .logo {
@@ -277,7 +354,7 @@ nav a:hover {
     }
     
     nav {
-        gap: 8px;
+        gap: 5px;
     }
     
     nav a {
@@ -285,11 +362,30 @@ nav a:hover {
         padding: 6px 10px;
     }
     
+    /* Остальное */
+    .hero {
+        padding: 60px 0;
+    }
+    
     .hero h1 {
-        font-size: 32px;
+        font-size: 36px;
     }
     
     .hero p {
-        font-size: 16px;
+        font-size: 18px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-contact-large {
+        width: 100%;
+        max-width: 350px;
     }
 }
