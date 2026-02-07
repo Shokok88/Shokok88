@@ -165,6 +165,7 @@ nav a:hover {
     overflow: hidden;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
 }
 
 .product-card:hover {
