@@ -167,6 +167,10 @@ nav a:hover {
     overflow: hidden;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 650px;
 }
 
 .product-card:hover {
@@ -512,6 +516,7 @@ footer p {
     
     .product-card {
         width: 100%;
+        min-height: auto;
     }
     
     .contact-buttons {
