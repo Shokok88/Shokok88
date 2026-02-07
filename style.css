@@ -512,7 +512,7 @@ footer p {
     
     .product-card {
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 40px !important;
     }
     
     .contact-buttons {
