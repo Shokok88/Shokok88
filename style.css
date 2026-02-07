@@ -505,35 +505,14 @@ footer p {
     }
     
     .product-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-buttons {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 40px;
     }
     
-    .btn-contact-large {
+    .product-card {
         width: 100%;
-        max-width: 350px;
-    }
-}
-
-    /* Остальное */
-    .hero {
-        padding: 60px 0;
-    }
-    
-    .hero h1 {
-        font-size: 36px;
-    }
-    
-    .hero p {
-        font-size: 18px;
-    }
-    
-    .product-grid {
-        grid-template-columns: 1fr;
+        margin-bottom: 0;
     }
     
     .contact-buttons {
