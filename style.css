@@ -166,7 +166,6 @@ nav a:hover {
     overflow: hidden;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    margin-bottom: 50px !important;
 }
 
 .product-card:hover {
@@ -512,7 +511,6 @@ footer p {
     
     .product-card {
         width: 100%;
-        margin-bottom: 40px !important;
     }
     
     .contact-buttons {
