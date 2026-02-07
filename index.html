@@ -3,9 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин б/у iPhone</title>
+    <title>Roma iPhone - Магазин б/у iPhone</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Скоро здесь будет магазин!</h1>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">Roma iPhone</div>
+            <nav>
+                <a href="#catalog">Каталог</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h1>Качественные б/у iPhone</h1>
+            <p>Проверенные устройства с гарантией по выгодным ценам</p>
+            <a href="#catalog" class="btn-primary">Смотреть каталог</a>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3>Проверка качества</h3>
+                <p>Каждое устройство тщательно проверено</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Быстрая доставка</h3>
+                <p>Доставим в удобное для вас время</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <h3>Гарантия</h3>
+                <p>Официальная гарантия на все товары</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Каталог -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2>Наши iPhone</h2>
+            <div class="product-grid">
+                
+                <!-- Товар 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x350/f5f5f7/000000?text=iPhone+14+Pro" alt="iPhone 14 Pro">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 14 Pro</h3>
+                        <p class="product-specs">256GB • Deep Purple • Отличное</p>
+                        <p class="product-price">75 000 ₽</p>
+                        <div class="product-buttons">
+                            <a href="https://wa.me/YOUR_PHONE" class="btn-whatsapp" target="_blank">WhatsApp</a>
+                            <a href="https://t.me/YOUR_USERNAME" class="btn-telegram" target="_blank">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x350/f5f5f7/000000?text=iPhone+13" alt="iPhone 13">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 13</h3>
+                        <p class="product-specs">128GB • Midnight • Хорошее</p>
+                        <p class="product-price">52 000 ₽</p>
+                        <div class="product-buttons">
+                            <a href="https://wa.me/YOUR_PHONE" class="btn-whatsapp" target="_blank">WhatsApp</a>
+                            <a href="https://t.me/YOUR_USERNAME" class="btn-telegram" target="_blank">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x350/f5f5f7/000000?text=iPhone+12" alt="iPhone 12">
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 12</h3>
+                        <p class="product-specs">64GB • Blue • Хорошее</p>
+                        <p class="product-price">38 000 ₽</p>
+                        <div class="product-buttons">
+                            <a href="https://wa.me/YOUR_PHONE" class="btn-whatsapp" target="_blank">WhatsApp</a>
+                            <a href="https://t.me/YOUR_USERNAME" class="btn-telegram" target="_blank">Telegram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Добавь еще товары по этому же шаблону -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Почему Roma iPhone?</h2>
+            <p>Мы специализируемся на продаже качественных б/у iPhone. Каждое устройство проходит тщательную проверку, поэтому вы можете быть уверены в его работоспособности. Предоставляем гарантию и помогаем с выбором подходящей модели.</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <div class="contact-buttons">
+                <a href="https://wa.me/YOUR_PHONE" class="btn-contact-large whatsapp" target="_blank">
+                    <span class="icon">📱</span>
+                    <span>Написать в WhatsApp</span>
+                </a>
+                <a href="https://t.me/YOUR_USERNAME" class="btn-contact-large telegram" target="_blank">
+                    <span class="icon">✈️</span>
+                    <span>Написать в Telegram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Roma iPhone. Все права защищены.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
