@@ -185,6 +185,43 @@ nav a:hover {
     background: #f5f5f7;
     overflow: hidden;
 }
+/* Базовый стиль для ярлыка */
+.product-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 5;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Цвет для "Забронировано" */
+.badge-reserved {
+    background-color: #ff9500; /* Фирменный оранжевый Apple */
+    color: white;
+}
+
+/* Цвет для "Продано" */
+.badge-sold {
+    background-color: #ff3b30; /* Красный */
+    color: white;
+}
+
+/* Цвет для "Новинка" */
+.badge-new {
+    background-color: #0071e3; /* Синий */
+    color: white;
+}
+
+/* Чтобы ярлык правильно позиционировался, добавь это к галерее */
+.product-gallery {
+    position: relative; /* Это позволит ярлыку "прилипнуть" к углу фото */
+}
 
 .gallery-images {
     width: 100%;
